@@ -4,6 +4,7 @@ const salaPython = [7, 3.5,8,9.5];
 
 function calculaMedia(notasDaSala) {
     // O reduce tem um acumulador que começa com zero no caso abaixo (últimpo parâmetro é zero)
+    // O reduce incrementa o acumulador
     const somaDasNotas = notasDaSala.reduce((acumulador, nota) => acumulador + nota, 0);
 
     const media = somaDasNotas / notasDaSala.length;
